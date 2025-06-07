@@ -1,0 +1,195 @@
+[33mcommit dfa9d3fe62e716542d9f33dc1edd195c672173e7[m
+Author: parthibanktech <parthiban.k.tech3@gmail.com>
+Date:   Sat Jun 7 13:21:26 2025 +0700
+
+    first commit
+
+[1mdiff --git a/.idea/.gitignore b/.idea/.gitignore[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a0ccf77[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/.gitignore[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32m# Default ignored files[m
+[32m+[m[32m/shelf/[m
+[32m+[m[32m/workspace.xml[m
+[32m+[m[32m# Environment-dependent path to Maven home directory[m
+[32m+[m[32m/mavenHomeManager.xml[m
+[1mdiff --git a/.idea/SpringSecurityMutlipleUser.iml b/.idea/SpringSecurityMutlipleUser.iml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d6ebd48[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/SpringSecurityMutlipleUser.iml[m
+[36m@@ -0,0 +1,9 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<module type="JAVA_MODULE" version="4">[m
+[32m+[m[32m  <component name="NewModuleRootManager" inherit-compiler-output="true">[m
+[32m+[m[32m    <exclude-output />[m
+[32m+[m[32m    <content url="file://$MODULE_DIR$" />[m
+[32m+[m[32m    <orderEntry type="inheritedJdk" />[m
+[32m+[m[32m    <orderEntry type="sourceFolder" forTests="false" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m</module>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/compiler.xml b/.idea/compiler.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1076ccc[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/compiler.xml[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project version="4">[m
+[32m+[m[32m  <component name="CompilerConfiguration">[m
+[32m+[m[32m    <annotationProcessing>[m
+[32m+[m[32m      <profile default="true" name="Default" enabled="true" />[m
+[32m+[m[32m      <profile name="Annotation profile for demo" enabled="true">[m
+[32m+[m[32m        <sourceOutputDir name="target/generated-sources/annotations" />[m
+[32m+[m[32m        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />[m
+[32m+[m[32m        <outputRelativeToContentRoot value="true" />[m
+[32m+[m[32m        <processorPath useClasspath="false">[m
+[32m+[m[32m          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />[m
+[32m+[m[32m        </processorPath>[m
+[32m+[m[32m        <module name="demo" />[m
+[32m+[m[32m      </profile>[m
+[32m+[m[32m    </annotationProcessing>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="JavacSettings">[m
+[32m+[m[32m    <option name="ADDITIONAL_OPTIONS_OVERRIDE">[m
+[32m+[m[32m      <module name="demo" options="-parameters" />[m
+[32m+[m[32m    </option>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/encodings.xml b/.idea/encodings.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6c094e1[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/encodings.xml[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project version="4">[m
+[32m+[m[32m  <component name="Encoding">[m
+[32m+[m[32m    <file url="file://$PROJECT_DIR$/demo/src/main/java" charset="UTF-8" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/jarRepositories.xml b/.idea/jarRepositories.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..712ab9d[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/jarRepositories.xml[m
+[36m@@ -0,0 +1,20 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project version="4">[m
+[32m+[m[32m  <component name="RemoteRepositoriesConfiguration">[m
+[32m+[m[32m    <remote-repository>[m
+[32m+[m[32m      <option name="id" value="central" />[m
+[32m+[m[32m      <option name="name" value="Central Repository" />[m
+[32m+[m[32m      <option name="url" value="https://repo.maven.apache.org/maven2" />[m
+[32m+[m[32m    </remote-repository>[m
+[32m+[m[32m    <remote-repository>[m
+[32m+[m[32m      <option name="id" value="central" />[m
+[32m+[m[32m      <option name="name" value="Maven Central repository" />[m
+[32m+[m[32m      <option name="url" value="https://repo1.maven.org/maven2" />[m
+[32m+[m[32m    </remote-repository>[m
+[32m+[m[32m    <remote-repository>[m
+[32m+[m[32m      <option name="id" value="jboss.community" />[m
+[32m+[m[32m      <option name="name" value="JBoss Community repository" />[m
+[32m+[m[32m      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />[m
+[32m+[m[32m    </remote-repository>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/misc.xml b/.idea/misc.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a02f3cc[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/misc.xml[m
+[36m@@ -0,0 +1,14 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project version="4">[m
+[32m+[m[32m  <component name="ExternalStorageConfigurationManager" enabled="true" />[m
+[32m+[m[32m  <component name="MavenProjectsManager">[m
+[32m+[m[32m    <option name="originalFiles">[m
+[32m+[m[32m      <list>[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/demo/pom.xml" />[m
+[32m+[m[32m      </list>[m
+[32m+[m[32m    </option>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="ProjectRootManager" version="2" project-jdk-name="21" project-jdk-type="JavaSDK">[m
+[32m+[m[32m    <output url="file://$PROJECT_DIR$/out" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/modules.xml b/.idea/modules.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8fb618e[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/modules.xml[m
+[36m@@ -0,0 +1,8 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project version="4">[m
+[32m+[m[32m  <component name="ProjectModuleManager">[m
+[32m+[m[32m    <modules>[m
+[32m+[m[32m      <module fileurl="file://$PROJECT_DIR$/.idea/SpringSecurityMutlipleUser.iml" filepath="$PROJECT_DIR$/.idea/SpringSecurityMutlipleUser.iml" />[m
+[32m+[m[32m    </modules>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/vcs.xml b/.idea/vcs.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..94a25f7[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/vcs.xml[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project version="4">[m
+[32m+[m[32m  <component name="VcsDirectoryMappings">[m
+[32m+[m[32m    <mapping directory="$PROJECT_DIR$" vcs="Git" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/demo/.gitattributes b/demo/.gitattributes[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3b41682[m
+[1m--- /dev/null[m
+[1m+++ b/demo/.gitattributes[m
+[36m@@ -0,0 +1,2 @@[m
+[32m+[m[32m/mvnw text eol=lf[m
+[32m+[m[32m*.cmd text eol=crlf[m
+[1mdiff --git a/demo/.gitignore b/demo/.gitignore[m
+[1mnew file mode 100644[m
+[1mindex 0000000..667aaef[m
+[1m--- /dev/null[m
+[1m+++ b/demo/.gitignore[m
+[36m@@ -0,0 +1,33 @@[m
+[32m+[m[32mHELP.md[m
+[32m+[m[32mtarget/[m
+[32m+[m[32m.mvn/wrapper/maven-wrapper.jar[m
+[32m+[m[32m!**/src/main/**/target/[m
+[32m+[m[32m!**/src/test/**/target/[m
+[32m+[m
+[32m+[m[32m### STS ###[m
+[32m+[m[32m.apt_generated[m
+[32m+[m[32m.classpath[m
+[32m+[m[32m.factorypath[m
+[32m+[m[32m.project[m
+[32m+[m[32m.settings[m
+[32m+[m[32m.springBeans[m
+[32m+[m[32m.sts4-cache[m
+[32m+[m
+[32m+[m[32m### IntelliJ IDEA ###[m
+[32m+[m[32m.idea[m
+[32m+[m[32m*.iws[m
+[32m+[m[32m*.iml[m
+[32m+[m[32m*.ipr[m
+[32m+[m
+[32m+[m[32m### NetBeans ###[m
+[32m+[m[32m/nbproject/private/[m
+[32m+[m[32m/nbbuild/[m
+[32m+[m[32m/dist/[m
+[32m+[m[32m/nbdist/[m
+[32m+[m[32m/.nb-gradle/[m
+[32m+[m[32mbuild/[m
+[32m+[m[32m!**/src/main/**/build/[m
+[32m+[m[32m!**/src/
