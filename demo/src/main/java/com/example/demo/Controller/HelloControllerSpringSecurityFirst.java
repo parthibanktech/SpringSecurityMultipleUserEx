@@ -14,6 +14,7 @@ import java.util.List;
 @RequestMapping("/Load")
 public class HelloControllerSpringSecurityFirst {
     private List<Student> std = new ArrayList<>();
+    //KafkaTemplate
 
     public HelloControllerSpringSecurityFirst() {
 
